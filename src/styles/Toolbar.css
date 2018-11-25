@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 .toolbar {
   position: fixed;
+  font-family: 'Lato', sans-serif;
   top: 0px;
   left: 0px;
   width: 100%;
-  background: #CCCCCC;
-  height: 56px;
+  background: rgba(255,255,255,.7);
+  height: 70px;
 }
 
 .toolbar_nav {
@@ -15,14 +18,9 @@
 }
 
 .toolbar_logo {
-  margin-left: 1rem;
+  margin: .5rem 0 0 1.5rem;
 }
 
-.toolbar_logo a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
 
 .spacer {
   flex: 1;
@@ -40,13 +38,14 @@
 }
 
 .toolbar_nav-items a {
-  color: white;
+  color: rgb(87,77,79);
   text-decoration: none;
 }
 
 .toolbar_nav-items a:hover,
 .toolbar_nav-items a:active {
   color: #000000;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {

@@ -35,13 +35,8 @@ class App extends Component {
           <Toolbar drawerClickHandler={this.drawerToggleClickHandler}/>
           <SideDrawer show={this.state.sideDrawerOpen} />
           {backdrop}
-          <main style={{marginTop: '64px'}}>
-            <p>This is the page content!</p>
-          </main>
         </div>
-        <header>
-          <h1>VCO Architectural Products Division</h1>
-        </header>
+
         <main>
           <Route exact path="/" component={Landing} />
           <Route path="/products" component={Products} />

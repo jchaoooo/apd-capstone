@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
 .side_drawer {
   height: 100%;
   background: white;
@@ -17,6 +20,7 @@
 }
 
 .side_drawer ul {
+  font-family: "Lato", sans-serif;
   height: 100%;
   list-style: none;
   display: flex;
