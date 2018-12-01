@@ -48,20 +48,64 @@
 
 .btn {
   border-radius: 9px;
-  font-family: 'Lato', sans-serif;
+  background-color: rgba(255,255,255,.5);
+  border: solid rgb(87,77,79) 3px;
   color: rgb(87,77,79);
+  text-align: center;
   font-size: 100%;
   padding: 5px 15px;
-  border: solid rgb(87,77,79) 3px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
   text-transform: uppercase;
-  text-decoration: none;
-  background: rgba(255,255,255,.5);
 }
 
-.btn:hover {
-  color: rgba(0,0,0);
-  border: solid rgba(0,0,0) 3px;
-  font-weight: bold;
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn:hover span {
+  padding-right: 20px;
+}
+
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.btn-project {
+  border-radius: 9px;
+  background-color: rgba(255,255,255,.5);
+  border: solid rgb(87,77,79) 3px;
+  color: rgb(87,77,79);
+  text-align: center;
+  font-size: 100%;
+  padding: 5px 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.point {
+  padding: 5%;
 }
 
 .landing-details {
@@ -71,6 +115,92 @@
   margin: 3%;
   font-family: "Lato", sans-serif;
 }
+
+.slider-image {
+  max-width: 100%;
+  padding-left: 10px;
+}
+
+
+.slider-wrapper {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.slider-wrapper .image-hover-reveal {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.30s, -webkit-transform 0.30s;
+  transition: opacity 0.30s, transform 0.30s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.slider-wrapper:hover .image-hover-reveal {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.slider-wrapper img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.30s;
+  transition: all 0.30s;
+}
+
+.slider-wrapper:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.image-hover-reveal h3 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.30s, -webkit-transform 0.30s;
+  transition: opacity 0.30s, transform 0.30s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+
+.image-hover-reveal:hover h3 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black!important;
+}
+
+
+
+
 
 @media screen and (max-width: 768px) {
   .content h1 {

@@ -1,1 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+.App {
+  overflow-x: hidden;
+}
