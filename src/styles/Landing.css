@@ -155,12 +155,12 @@
   font-size: 100%;
   text-align: center;
   font-family: "Lato", sans-serif;
-  margin: 5% 7% 5% 7%;
+  margin: 5% 6% 5% 6%;
 }
 
 .landing-services {
   font-family: "Lato", sans-serif;
-  margin: 5% 7% 5% 7%;
+  margin: 5% 6% 5% 6%;
 }
 
 .landing-services h2 {
@@ -179,7 +179,6 @@
   table-layout: fixed;
 }
 
-
 .icon {
   font-size: 500%;
 }
@@ -191,6 +190,7 @@
 
 .landing-projects {
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .slider-image {
@@ -201,7 +201,6 @@
 
 .slider-wrapper {
   width: 100%;
-  height: 100%;
   float: left;
   overflow: hidden;
   position: relative;
@@ -283,7 +282,105 @@
   color: black!important;
 }
 
+.landing-contact {
+  background: url('./../images/landing-contact.jpg') 50% 15% repeat;
+  width: 100%;
+  height: 35vh;
+  overflow: hidden;
+  background-size: cover;
+}
 
+.contact-wrapper {
+  background: rgba(227, 181, 29, 0.6);
+  height: 35vh;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+.contact-slogan {
+  margin: 2% auto;
+}
+
+.contact-wrapper h3{
+  color: #FFFFFF;
+  font-size: 200%;
+  margin: auto 3% auto auto ;
+  position: relative;
+  text-align: right;
+}
+
+.btn-contact {
+  font-family: "News Cycle", sans-serif;
+  text-decoration: none;
+  color: #696956;
+  background: #E3E3E3;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 100%;
+  width: 175px;
+  cursor: pointer;
+  float: right;
+  margin-right: 3%;
+  padding: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  position: relative;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+
+.btn-contact:hover, .btn-contact:focus, .btn-contact:active {
+  background-color: #696956;
+  color: white;
+}
+
+
+.footer-wrapper {
+  background-color: #E3E3E3;
+  text-align: center;
+  padding-top: 7%;
+}
+
+.footer-wrapper p {
+  font-family: "Lato", sans-serif;
+  font-size: 60%;
+  margin: 0;
+}
+
+.legal {
+  font-family: "News Cycle", sans-serif;
+  margin: 0 3% 5% 3%;
+}
+
+.legal a {
+  text-decoration: none;
+  color: black;
+  padding: 0 3%;
+  font-size: 70%;
+  text-transform: uppercase;
+}
+
+.vco-logo {
+  width: 10%;
+  padding: 0;
+}
+
+.icon-contact {
+  font-size: 150%;
+  color: black;
+  padding: 0 1%;
+  margin-top: 1%;
+}
+
+.copyright {
+  padding-bottom: 3%;
+}
 
 
 
@@ -305,6 +402,9 @@
   .icon {
     font-size: 300%;
   }
+  .vco-logo {
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -324,5 +424,8 @@
   }
   .table tr tr {
     margin-bottom: 0;
+  }
+  .contact-wrapper h3 {
+    font-size: 150%;
   }
 }

@@ -3,14 +3,15 @@ import './../styles/Landing.css';
 import Slider from "react-slick";
 import '../../node_modules/slick-carousel/slick/slick.css';
 import '../../node_modules/slick-carousel/slick/slick-theme.css';
-import {MdBuild, MdAccessAlarm, MdList, MdModeEdit, MdExtension} from 'react-icons/md'
+import {MdBuild, MdAccessAlarm, MdList, MdModeEdit, MdExtension} from 'react-icons/md';
+import {FaLinkedinIn, FaFacebookF, FaInstagram} from 'react-icons/fa';
 
 class Landing extends Component {
   render () {
     const settings = {
       centerMode: true,
       centerPadding: '60px',
-      slidesToShow: 2,
+      slidesToShow: 4,
       responsive: [
         {
           breakpoint: 1024,
@@ -182,6 +183,38 @@ class Landing extends Component {
               </div>
               <a className="btn-project" href="/projects"><span>EXPLORE MORE PROJECTS</span></a>
             </div>
+        </section>
+
+        <section className="landing-contact">
+          <div className="contact-wrapper">
+            <div className="contact-slogan">
+              <h3>PLAN.</h3>
+              <h3>CREATE.</h3>
+              <h3>TRANSFORM</h3>
+            </div>
+            <a className="btn-contact" href="/projects"><strong>Contact Us</strong></a>
+          </div>
+        </section>
+
+        <section className="footer">
+          <div className="footer-wrapper">
+            <img src={require("./../images/vco-logo.png")} alt="vco-logo" className="vco-logo" />
+            <p>VISIT VCOFFICES.COM FOR OTHER SERVICES</p>
+            <div className="connect">
+              <FaLinkedinIn className="icon-contact"></FaLinkedinIn>
+              <FaFacebookF className="icon-contact"></FaFacebookF>
+              <FaInstagram className="icon-contact"></FaInstagram>
+            </div>
+            <div className="legal">
+              <a href="/projects">Terms of Use</a>
+              <a href="/projects">Privacy</a>
+              <a href="/projects">Locations</a>
+            </div>
+            <div className="copyright">
+              <p>&#169; VANGARD CONCEPT OFFICES 2018</p>
+              <p>All Rights Reserved.  A Preferred Teknion Dealer.</p>
+            </div>
+          </div>
         </section>
       </div>
     )
