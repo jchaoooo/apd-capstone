@@ -16,11 +16,11 @@ const toolbar = props => (
       <div className="spacer" />
       <div className="toolbar_nav-items">
         <ul>
-          <li><a href="/">EXPERTISE</a></li>
-          <li><a href="/products">PRODUCTS</a></li>
-          <li><a href="/">PROJECTS</a></li>
-          <li><a href="/">ABOUT</a></li>
-          <li><a href="/">CONTACT</a></li>
+          <li><a href="/" className="toolbar-links">EXPERTISE</a></li>
+          <li><a href="/products" className="toolbar-links">PRODUCTS</a></li>
+          <li><a href="/" className="toolbar-links">PROJECTS</a></li>
+          <li><a href="/" className="toolbar-links">ABOUT</a></li>
+          <li><a href="/" className="toolbar-links">CONTACT</a></li>
         </ul>
       </div>
     </nav>

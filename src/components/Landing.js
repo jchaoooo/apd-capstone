@@ -47,33 +47,33 @@ class Landing extends Component {
               <h2>
                 Demountable partitions are a perfect solution designed for function, aesthetic and flexibility.
               </h2>
-              <a className="btn" href="/">SEE PRODUCTS</a>
+              <a className="btn-intro" href="/"><strong>See Products</strong></a>
             </div>
           </div>
         </section>
 
         <section className="landing-story">
             <div className="point">
-              <a className="btn-team" href="/about">Meet the team</a>
-              <h2 className="point-title">ARCHITECTURAL PRODUCTS DIVISION</h2>
-              <h3 className="point-title2">A division of Vangard Concept Offices</h3>
-              <p className="point-description">
-                  Create a quiet private office, meeting room or telephone room. Quickly reconfigure and upgrade walls to adapt to changes in the workforce, and integrate your own new or existing technologies with ease. Architecture walls have become so popular for VCO that we staff a dedicated division to assist with anything from a single glass storefront to a fast-paced, multi-floor undertaking.
-              </p>
-              <p>VCO APD is a California licensed “B” Contractor.</p>
+              <div className="landing-story-wrapper">
+                <h2 className="point-title">ARCHITECTURAL PRODUCTS DIVISION</h2>
+                <h3 className="point-title2">A division of Vangard Concept Offices</h3>
+                <p className="point-description">
+                    Create a quiet private office, meeting room or telephone room. Quickly reconfigure and upgrade walls to adapt to changes in the workforce, and integrate your own new or existing technologies with ease. Architecture walls have become so popular for VCO that we staff a dedicated division to assist with anything from a single glass storefront to a fast-paced, multi-floor undertaking.
+                </p>
+                <p>VCO APD is a California licensed “B” Contractor.</p>
+                <a className="btn-team" href="/about">Meet the team</a>
+              </div>
             </div>
         </section>
 
-        <hr className="horizontal-line"></hr>
-
         <section className="landing-services">
             <div className="point">
-              <h2 className="point-title">Services</h2>
+              <h2 className="point-title">Our Services</h2>
                 <table className="table">
                   <tr>
                     <td>
                       <table>
-                        <tbody>
+                        <tbody className="table-column">
                           <tr>
                             <td scope="col"><MdModeEdit className="icon"></MdModeEdit></td>
                           </tr>
@@ -85,7 +85,7 @@ class Landing extends Component {
                     </td>
                     <td>
                       <table>
-                        <tbody>
+                        <tbody className="table-column">
                           <tr>
                             <td scope="col"><MdExtension className="icon"></MdExtension></td>
                           </tr>
@@ -97,7 +97,7 @@ class Landing extends Component {
                     </td>
                     <td>
                       <table>
-                        <tbody>
+                        <tbody className="table-column">
                           <tr>
                             <td scope="col"><MdAccessAlarm className="icon"></MdAccessAlarm></td>
                           </tr>
@@ -109,7 +109,7 @@ class Landing extends Component {
                     </td>
                     <td>
                       <table>
-                        <tbody>
+                        <tbody className="table-column">
                           <tr>
                             <td scope="col"><MdBuild className="icon"></MdBuild></td>
                           </tr>
@@ -121,7 +121,7 @@ class Landing extends Component {
                     </td>
                     <td>
                       <table>
-                        <tbody>
+                        <tbody className="table-column">
                           <tr>
                             <td scope="col"><MdList className="icon"></MdList></td>
                           </tr>
@@ -136,8 +136,6 @@ class Landing extends Component {
               <a className="btn-services" href="/services">See more services</a>
             </div>
         </section>
-
-        <hr className="horizontal-line"></hr>
 
         <section className="landing-projects">
             <div className="point">
@@ -181,7 +179,7 @@ class Landing extends Component {
                     </div>
                 </Slider>
               </div>
-              <a className="btn-project" href="/projects"><span>EXPLORE MORE PROJECTS</span></a>
+              <a className="btn-project" href="/projects"><strong>Explore More Projects</strong></a>
             </div>
         </section>
 
@@ -201,9 +199,9 @@ class Landing extends Component {
             <img src={require("./../images/vco-logo.png")} alt="vco-logo" className="vco-logo" />
             <p>VISIT VCOFFICES.COM FOR OTHER SERVICES</p>
             <div className="connect">
-              <FaLinkedinIn className="icon-contact"></FaLinkedinIn>
-              <FaFacebookF className="icon-contact"></FaFacebookF>
-              <FaInstagram className="icon-contact"></FaInstagram>
+              <a href="https://www.linkedin.com/company-beta/109468/?pathWildcard=109468"><FaLinkedinIn className="icon-contact"></FaLinkedinIn></a>
+              <a href="https://www.facebook.com/VCOffices/"><FaFacebookF className="icon-contact"></FaFacebookF></a>
+              <a href="https://www.instagram.com/vcoffices/"><FaInstagram className="icon-contact"></FaInstagram></a>
             </div>
             <div className="legal">
               <a href="/projects">Terms of Use</a>
