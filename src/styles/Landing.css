@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|News+Cycle');
+a:-webkit-any-link {
+    text-decoration: none;
+}
 
 .landing-intro {
   font-family: 'Lato', sans-serif;
@@ -149,7 +152,7 @@
 .btn-services:before {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   left: 0;
   right: 100%;
   bottom: 0;
@@ -165,6 +168,7 @@
 
 .btn-services:hover:before, .btn-services:focus:before, .btn-services:active:before {
   right: 0;
+  text-decoration: none;
 }
 
 
@@ -368,52 +372,6 @@
   margin: 0;
 }
 
-.legal {
-  font-family: "News Cycle", sans-serif;
-  margin: 0 3% 5% 3%;
-}
-
-.legal a {
-  text-decoration: none;
-  color: black;
-  padding: 0 3%;
-  font-size: 70%;
-  text-transform: uppercase;
-}
-
-.vco-logo {
-  width: 10%;
-  padding: 0;
-}
-
-.icon-contact {
-  font-size: 150%;
-  color: #696956;
-  padding: 0 1%;
-  margin: 2% auto;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.icon-contact:hover, .icon-contact:focus, .icon-contact:active {
-  -webkit-transform: translateY(-8px);
-  transform: translateY(-8px);
-  color: #E3B51D;
-}
-
-
-.copyright {
-  padding-bottom: 3%;
-}
 
 
 

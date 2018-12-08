@@ -7,6 +7,8 @@ import Altos from './components/Altos';
 import Toolbar from './components/Toolbar';
 import SideDrawer from './components/SideDrawer';
 import Backdrop from './components/Backdrop';
+import Contact from './components/Contact';
+import Footer from "./components/Footer";
 
 class App extends Component {
   state = {
@@ -41,7 +43,12 @@ class App extends Component {
           <Route exact path="/" component={Landing} />
           <Route path="/products" component={Products} />
           <Route path="/altos" component={Altos} />
+          <Route path="/contact" component={Contact} />
         </main>
+
+        <div className="Footer">
+          <Footer />
+          </div>
       </div>
     );
   }

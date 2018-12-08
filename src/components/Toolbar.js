@@ -20,7 +20,7 @@ const toolbar = props => (
           <li><a href="/products" className="toolbar-links">PRODUCTS</a></li>
           <li><a href="/" className="toolbar-links">PROJECTS</a></li>
           <li><a href="/" className="toolbar-links">ABOUT</a></li>
-          <li><a href="/" className="toolbar-links">CONTACT</a></li>
+          <li><a href="/contact" className="toolbar-links">CONTACT</a></li>
         </ul>
       </div>
     </nav>
