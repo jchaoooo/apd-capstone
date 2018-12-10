@@ -5,8 +5,6 @@ import {MdBuild, MdAccessAlarm, MdList, MdModeEdit, MdExtension, MdFavorite, MdS
 import { Link } from 'react-router-dom';
 
 
-const MyLink = props => <Link to="/contact" {...props} />
-
 class Services extends Component {
   render() {
     return (
