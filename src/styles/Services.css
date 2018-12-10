@@ -44,6 +44,9 @@
 
 .service-icon {
   font-size: 500%;
+  color: #696956;
+  margin:0;
+  padding: 0;
 }
 
 .services {
