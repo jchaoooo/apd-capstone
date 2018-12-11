@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import '../../node_modules/slick-carousel/slick/slick.css';
 import '../../node_modules/slick-carousel/slick/slick-theme.css';
 import {MdBuild, MdAccessAlarm, MdList, MdModeEdit, MdExtension} from 'react-icons/md';
-import {FaLinkedinIn, FaFacebookF, FaInstagram} from 'react-icons/fa';
 
 class Landing extends Component {
   render () {
@@ -75,7 +74,7 @@ class Landing extends Component {
                       <table>
                         <tbody className="table-column">
                           <tr>
-                            <td scope="col"><MdModeEdit className="icon"></MdModeEdit></td>
+                            <td><MdModeEdit className="icon"></MdModeEdit></td>
                           </tr>
                           <tr>
                             <td data-header="design"><p>Design</p></td>
@@ -87,7 +86,7 @@ class Landing extends Component {
                       <table>
                         <tbody className="table-column">
                           <tr>
-                            <td scope="col"><MdExtension className="icon"></MdExtension></td>
+                            <td><MdExtension className="icon"></MdExtension></td>
                           </tr>
                           <tr>
                             <td data-header="design"><p>Product Solutions</p></td>
@@ -99,7 +98,7 @@ class Landing extends Component {
                       <table>
                         <tbody className="table-column">
                           <tr>
-                            <td scope="col"><MdAccessAlarm className="icon"></MdAccessAlarm></td>
+                            <td><MdAccessAlarm className="icon"></MdAccessAlarm></td>
                           </tr>
                           <tr>
                             <td data-header="design"><p>Project Management</p></td>
@@ -111,7 +110,7 @@ class Landing extends Component {
                       <table>
                         <tbody className="table-column">
                           <tr>
-                            <td scope="col"><MdBuild className="icon"></MdBuild></td>
+                            <td><MdBuild className="icon"></MdBuild></td>
                           </tr>
                           <tr>
                             <td data-header="design"><p>Installation & Reconfiguration</p></td>
@@ -123,7 +122,7 @@ class Landing extends Component {
                       <table>
                         <tbody className="table-column">
                           <tr>
-                            <td scope="col"><MdList className="icon"></MdList></td>
+                            <td><MdList className="icon"></MdList></td>
                           </tr>
                           <tr>
                             <td data-header="design"><p>Inventory</p></td>
