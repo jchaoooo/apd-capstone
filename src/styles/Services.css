@@ -13,7 +13,7 @@
   font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   color: white;
-  font-size: 400%;
+  font-size: 500%;
 }
 
 .cover-overlay {
@@ -143,4 +143,11 @@
 .btn-contact:hover, .btn-contact:focus, .btn-contacts:active {
   background-color: #696956;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .service-photo h1 {
+    font-size: 300%;
+    text-align: center;
+  }
 }
