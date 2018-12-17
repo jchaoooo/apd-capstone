@@ -25,7 +25,7 @@ class Contact extends Component {
         </section>
 
         <section className="contact-information">
-          <Tabs onChange={this.onChange} defaultSelectedIndex={1}>
+          <Tabs onChange={this.onChange} defaultSelectedIndex={0}>
             <Tab className="contact-tab" value="US" label="US Locations" onActive={this.onActive}>
                 <Row>
                     <Col md="3" className="info">
