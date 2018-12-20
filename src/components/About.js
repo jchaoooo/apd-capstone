@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './../styles/About.css';
-import {Tabs, Tab, Button, Row, Col} from 'muicss/react';
-import {MdBuild, MdAccessAlarm, MdList, MdModeEdit, MdExtension, MdFavorite, MdSchedule, MdFlashOn} from 'react-icons/md';
+import {Tabs, Tab, Row, Col} from 'muicss/react';
 
 class About extends Component {
   render() {

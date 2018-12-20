@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './../styles/Services.css';
-import {Row, Col, Button} from 'muicss/react';
+import {Row, Col} from 'muicss/react';
 import {MdBuild, MdAccessAlarm, MdList, MdModeEdit, MdExtension, MdFavorite, MdSchedule, MdFlashOn} from 'react-icons/md';
-import { Link } from 'react-router-dom';
 
 
 class Services extends Component {

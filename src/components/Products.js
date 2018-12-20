@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './../styles/Products.css';
 import '../../node_modules/slick-carousel/slick/slick.css';
 import '../../node_modules/slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
-import {Row, Col, Button, Panel} from 'muicss/react';
+import {Row, Col, Panel} from 'muicss/react';
 
 
 class Products extends Component {
@@ -37,9 +37,9 @@ class Products extends Component {
                   <div className="products-block">
                     <div>
                       <Slider {...settings}>
-                          <div className="slider"><img src={require("./../images/products-altos.jpg")} alt="altos-photo" className="product-image" /></div>
-                          <div className="slider"><img src={require("./../images/products-altos1.jpg")} alt="altos-photo" className="product-image" /></div>
-                          <div className="slider"><img src={require("./../images/products-altos2.jpg")} alt="altos-photo" className="product-image" /></div>
+                          <div className="slider"><img src={require("./../images/products-altos.jpg")} alt="altos" className="product-image" /></div>
+                          <div className="slider"><img src={require("./../images/products-altos1.jpg")} alt="altos" className="product-image" /></div>
+                          <div className="slider"><img src={require("./../images/products-altos2.jpg")} alt="altos" className="product-image" /></div>
                       </Slider>
                     </div>
                     <h1 className="products-title">Altos</h1>
@@ -58,9 +58,9 @@ class Products extends Component {
                   <div className="products-block">
                     <div>
                       <Slider {...settings}>
-                          <div className="slider"><img src={require("./../images/products-optos.jpg")} alt="optos-photo" className="product-image" /></div>
-                          <div className="slider"><img src={require("./../images/products-optos.jpg")} alt="optos-photo" className="product-image" /></div>
-                          <div className="slider"><img src={require("./../images/products-optos2.jpg")} alt="optos-photo" className="product-image" /></div>
+                          <div className="slider"><img src={require("./../images/products-optos.jpg")} alt="optos" className="product-image" /></div>
+                          <div className="slider"><img src={require("./../images/products-optos.jpg")} alt="optos" className="product-image" /></div>
+                          <div className="slider"><img src={require("./../images/products-optos2.jpg")} alt="optos" className="product-image" /></div>
                       </Slider>
                     </div>
                     <h1 className="products-title">Optos</h1>
@@ -79,9 +79,9 @@ class Products extends Component {
                   <div className="products-block">
                     <div>
                       <Slider {...settings}>
-                          <div className="slider"><img src={require("./../images/products-focus.jpg")} alt="focus-photo" className="product-image" /></div>
-                          <div className="slider"><img src={require("./../images/products-focus1.jpg")} alt="focus-photo" className="product-image" /></div>
-                          <div className="slider"><img src={require("./../images/products-focus2.jpg")} alt="focus-photo" className="product-image" /></div>
+                          <div className="slider"><img src={require("./../images/products-focus.jpg")} alt="focus" className="product-image" /></div>
+                          <div className="slider"><img src={require("./../images/products-focus1.jpg")} alt="focus" className="product-image" /></div>
+                          <div className="slider"><img src={require("./../images/products-focus2.jpg")} alt="focus" className="product-image" /></div>
                       </Slider>
                     </div>
                     <h1 className="products-title">Focus</h1>
