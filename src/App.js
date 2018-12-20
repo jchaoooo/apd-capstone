@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
 import './App.css';
 
-import Landing from './components/Landing';
-import Products from './components/Products';
-import Altos from './components/Altos';
+import Container from './components/Container';
 import Toolbar from './components/Toolbar';
 import SideDrawer from './components/SideDrawer';
 import Backdrop from './components/Backdrop';
-import Contact from './components/Contact';
 import Footer from "./components/Footer";
-import Services from "./components/Services";
-import About from "./components/About";
 
 class App extends Component {
   state = {
@@ -42,13 +36,8 @@ class App extends Component {
           {backdrop}
         </div>
 
-        <main>
-          <Route exact path="/" component={Landing} />
-          <Route path="/products" component={Products} />
-          <Route path="/altos" component={Altos} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/services" component={Services} />
-          <Route path="/about" component={About} />
+        <main className="Main">
+          <Container />
         </main>
 
         <div className="Footer">
