@@ -5,6 +5,7 @@ import '../../node_modules/slick-carousel/slick/slick.css';
 import '../../node_modules/slick-carousel/slick/slick-theme.css';
 import Slider from "react-slick";
 import {Row, Col, Panel} from 'muicss/react';
+import Fade from 'react-reveal/Reveal';
 
 
 class Products extends Component {
@@ -23,6 +24,7 @@ class Products extends Component {
               </div>
           </section>
 
+          <Fade bottom cascade>
           <section className="products-statement">
             <Panel>
               <h2>Prefabricated Walls</h2>
@@ -30,9 +32,11 @@ class Products extends Component {
               <p>Movable walls are more cost effective than traditional construction particularly when future reconfigurations are anticipated. With possible tax benefits and its re-usable nature, wall product has a greater long-term value. Relocating wall product is quicker, cleaner and requires fewer contractors as opposed to the demolition and rebuilding of drywall.</p>
             </Panel>
           </section>
+          </Fade>
 
           <section className="products">
             <Row>
+              <Fade bottom cascade>
               <Col md="4">
                   <div className="products-block">
                     <div>
@@ -53,7 +57,8 @@ class Products extends Component {
                     </div>
                   </div>
               </Col>
-
+              </Fade>
+              <Fade bottom cascade>
               <Col md="4">
                   <div className="products-block">
                     <div>
@@ -74,7 +79,8 @@ class Products extends Component {
                     </div>
                   </div>
               </Col>
-
+              </Fade>
+              <Fade bottom cascade>
               <Col md="4">
                   <div className="products-block">
                     <div>
@@ -95,6 +101,7 @@ class Products extends Component {
                     </div>
                   </div>
               </Col>
+              </Fade>
             </Row>
           </section>
       </div>

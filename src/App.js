@@ -37,7 +37,7 @@ class App extends Component {
         </div>
 
         <main className="Main">
-          <Container />
+            <Container />
         </main>
 
         <div className="Footer">

@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import '../../node_modules/slick-carousel/slick/slick.css';
 import '../../node_modules/slick-carousel/slick/slick-theme.css';
 import {MdBuild, MdAccessAlarm, MdList, MdModeEdit, MdExtension} from 'react-icons/md';
+import Fade from 'react-reveal/Reveal';
 
 class Landing extends Component {
   render () {
@@ -51,6 +52,7 @@ class Landing extends Component {
           </div>
         </section>
 
+        <Fade bottom cascade>
         <section className="landing-story">
             <div className="point">
               <div className="landing-story-wrapper">
@@ -135,6 +137,7 @@ class Landing extends Component {
               <a className="btn-services" href="/services">See more services</a>
             </div>
         </section>
+        </Fade>
 
         <section className="landing-projects">
             <div className="point">
@@ -182,6 +185,7 @@ class Landing extends Component {
             </div>
         </section>
 
+        <Fade bottom cascade>
         <section className="landing-contact">
           <div className="contact-wrapper">
             <div className="contact-slogan">
@@ -192,6 +196,7 @@ class Landing extends Component {
             <a className="btn-contact" href="/projects"><strong>Contact Us</strong></a>
           </div>
         </section>
+        </Fade>
       </div>
     )
   }
